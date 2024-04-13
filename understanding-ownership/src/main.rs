@@ -13,4 +13,13 @@ fn main() {
     }
 
     // println!("{s}"); the s variable will not work here cuz it's out of scope
+    // let mut s = String::from("Hello");
+    // s.push_str(", World!");
+    // println!("{s}");
+
+    {
+        let mut s = String::from("Hello");
+        s.push_str(", World!");
+        println!("{}", s);
+    }
 }
